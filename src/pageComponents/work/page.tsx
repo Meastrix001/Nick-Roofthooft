@@ -20,15 +20,18 @@ export default function WorkPage() {
             </Box>
 
             <Box>
+                <Text as="p" color="gray">
+                    7 years of development experience
+                </Text>{" "}
+                <Text as="p" color="gray">
+                    Full-time employed for the last 3 years.
+                </Text>
                 <Heading as="h2" size={"8"}>
                     Discover my work
                 </Heading>
-                <Text color="gray"></Text>
-                <Text color="gray">7 years of development experience</Text>{" "}
-                <Text color="gray">
-                    Currently have Full-time employed for the last 3 years.
+                <Text as="p" color="gray">
+                    List of all my freelance work.
                 </Text>
-                <Text color="gray">List of all my freelance work.</Text>
                 <Section>
                     <WorkList />
                 </Section>
