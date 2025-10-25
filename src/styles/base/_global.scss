@@ -8,8 +8,27 @@ body {
 }
 
 .radix-themes {
-  background-image: url("/static/opoy7.jpg");
-  background-size: cover;
+  // position: absolute;
+  // background-image: url("/static/opoy7.jpg");
+  // background-size: cover;
+
+  &::after {
+    z-index: -1;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(0, 0, 0, 0.1) 55%,
+        rgb(0, 0, 0) 100%
+      ),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4z8DwHwAFkgJ/hBk1UgAAAABJRU5ErkJggg=="); /* tiny transparent noise */
+    background-size: cover, 200px 200px;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 .button,
 .cursor {
