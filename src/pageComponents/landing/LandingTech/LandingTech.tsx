@@ -7,7 +7,7 @@ export const LandingTech = () => {
     return <Box width={"100%"} className="landing__tech">
         <Flex gap={"4"} align={"center"} justify={"center"}>
             {techIcons.map((img) => {
-                return <Badge size={"3"} style={{ backgroundColor: "gray", filter: "grayscale(100%)" }} key=""> <img height={36} key={img} src={img} /></Badge>
+                return <Badge size={"3"} style={{ backgroundColor: "gray" }} key=""> <img height={36} key={img} src={img} /></Badge>
             })}
         </Flex>
     </Box>

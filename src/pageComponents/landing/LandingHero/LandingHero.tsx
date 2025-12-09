@@ -41,25 +41,44 @@ export const LandingHero = () => {
                     <Flex
                         gap={"6"}
                         direction={"row"}
-                        width={"fit-content"}
+                        width={"100%"}
                         align={"center"}
+                        mb={"4"}
                     >
-                        <InViewWrapper delay={0.75}>
-                            <Button variant="outline" size={{ initial: "2", lg: "4" }}>
-                                <Link href={"/en/work"}>
-                                    <Text>See my work</Text>
+                        <Box width={"100%"}>
+                            <InViewWrapper direction="left" delay={0.75}>
+                                <Button style={{ width: "100%" }} variant="outline" size={{ initial: "2", lg: "4" }}>
+                                    <Link href={"/en/work"}>
+                                        <Text>See my work</Text>
+                                    </Link>
+                                </Button>
+                            </InViewWrapper>
+
+                        </Box>
+
+                        <Box width={"100%"}>
+                            <InViewWrapper direction="right" delay={0.75}>
+                                <Button style={{ width: "100%" }} variant="soft" size={{ initial: "2", lg: "4" }}>
+                                    <Link href={"/en/contact"}>
+                                        <Text>Contact me</Text>
+                                    </Link>
+                                </Button>
+                            </InViewWrapper>
+                        </Box>
+                    </Flex>
+
+                    <Box width={"100%"}>
+                        <InViewWrapper direction="bottom" delay={0.75}>
+                            <Button style={{ width: "100%" }} variant="solid" size={{ initial: "2", lg: "4" }}>
+                                <Link href={"/en/about"}>
+                                    <Text>More about me</Text>
                                 </Link>
                             </Button>
                         </InViewWrapper>
 
-                        <InViewWrapper delay={0.75}>
-                            <Button variant="soft" size={{ initial: "2", lg: "4" }}>
-                                <Link href={"/en/contact"}>
-                                    <Text>Contact me</Text>
-                                </Link>
-                            </Button>
-                        </InViewWrapper>
-                    </Flex>
+                    </Box>
+
+
                 </Section>
             </Box>
         </Flex>

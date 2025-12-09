@@ -148,7 +148,7 @@ export const casesData = [
       "I used all my latest skills. Its built on React, Typescript & NextJs, using Radix + Scss for styling.",
       "I added Next SEO metadata it has 100/100 SEO scoring, vercel and google analytics, google Ads, multi language support, admin dashboard to manage reviews, a mini Node back end for handling reviews and so on..",
       "This was my first time Buying a domain from a providor ( Zone.ee ), and setting up the domain in different hosting service ( vercel ).",
-      "It has everything to make this site as complete as possible. it is reaching roughly 12.000 users monthly trough google ads",
+      "It has everything to make this site as complete as possible. it is reaching roughly 12.000 users monthly in google results through google ads",
       "WIP items are to add captcha for reviews to prevent spam & cookies"
     ],
     github: "",
@@ -189,6 +189,29 @@ export const casesData = [
       "Animations"
     ],
     date: "Work in progress - Side project"
+  },
+
+
+  {
+    linkTo: "Click to Preview.",
+    logo: "/static/cases/kuku.png",
+    name: "Kuku Auto demo",
+    link: "https://kuku-auto.vercel.app/",
+    descs: [
+      "A demo website made on request, customer wanted info about mobing their current Wordpress site to a more modern platforn.",
+      "Their current site stopped working due to updates, I kept their original design, and added to it.",
+      "As its meant as a demo/preview, its made with mock data.",
+    ],
+    github: "",
+    tags: [
+      "NextJs",
+      "Radix-UI",
+      "SCSS",
+      "React",
+      "Typescript",
+      "Animations"
+    ],
+    date: "2025 - Freelance, preview/demo site"
   },
 
   {

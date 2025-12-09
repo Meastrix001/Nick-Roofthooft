@@ -17,7 +17,7 @@ export const contactData = [
     },
     {
         icon: <FaEnvelopeSquare width={svgWidth} height={svgHeight} />,
-        key: "nick.ebwebdesign@gmail.com",
+        key: "roofthooftn2012@gmail.com",
         value: ""
     },
     // {

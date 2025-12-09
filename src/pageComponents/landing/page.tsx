@@ -20,12 +20,13 @@ export default function HomePage() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "contain", // keeps aspect ratio
+                  objectFit: "contain",
                   display: "block",
                 }}
               />
             </Box>
           </Grid>
+
           <Box>
             <LandingTech />
           </Box>
