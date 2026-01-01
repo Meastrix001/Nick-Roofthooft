@@ -1,4 +1,5 @@
 import { En_workCases } from "./English_workCases";
+import { MixIcon, RocketIcon, StarFilledIcon } from "@radix-ui/react-icons";
 
 export const lang_en = {
   constants: {
@@ -21,10 +22,10 @@ export const lang_en = {
     name: "Nick Roofthooft",
     exp: "5+ years of coding experience.",
     workExp: "Full-time employed for the last 3+ years.",
-    discover: "Discover my work",
-    offer: "Starting from 2026, I also offer freelance work on the side. contact me for more info or requests.",
-    disclaimer: "I currently work in a start-up company, this means all work I do falls under a NDA, and such I cannot show any work I have done at my work.",
-    list: "Below is a List of my freelance work.",
+    discover: "Discover my freelance work",
+    offer: "Starting from 2026, I also offer freelance work. Contact me for more info or requests.",
+    disclaimer: "I work in a start-up company, this means all company work I do falls under a NDA, and such I cannot show any work I have done at my work.",
+    list: "",
 
     labels: {
       dateReason: "Date & Reason:",
@@ -132,19 +133,22 @@ export const lang_en = {
     },
     specializations: [
       {
-        icon: "🎮",
+        icon: RocketIcon,
         title: "Gaming Events",
-        description: "Custom CS2 maps, leaderboards, and real-time event management systems for Dreamhack and other major gaming events"
+        description: "Custom CS2 maps, leaderboards, and real-time event management systems for Dreamhack and other major gaming events",
+        color: "violet"
       },
       {
-        icon: "⚡",
+        icon: MixIcon,
         title: "Full Stack Development",
-        description: "End-to-end development with TypeScript, React, Node.js, Firebase serverless functions, and Electron desktop apps"
+        description: "End-to-end development with TypeScript, React, Node.js, Firebase serverless functions, and Electron desktop apps",
+        color: "cyan"
       },
       {
-        icon: "🔧",
+        icon: StarFilledIcon,
         title: "Event Support",
-        description: "On-site technical support and emergency handling during live gaming events with thousands of participants"
+        description: "On-site technical support and emergency handling during live gaming events with thousands of participants",
+        color: "gold"
       }
     ]
   },

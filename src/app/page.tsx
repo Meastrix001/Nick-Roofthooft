@@ -1,4 +1,5 @@
-import Home from "@/pageComponents/landing/page";
+
+import Redirect from "@/pageComponents/redirect/page";
 import { brand } from "@/theme/brand.config";
 import { LanguageKeys } from "@/utils/i18n/LanguageKeys";
 import { Metadata } from "next";
@@ -8,8 +9,9 @@ const pageLanguage = "en"
 
 
 export default function LandingPageEn() {
+
   return (
-    <Home lang={pageLanguage} />
+    <Redirect lang={pageLanguage} />
   )
 }
 

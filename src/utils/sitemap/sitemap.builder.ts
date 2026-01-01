@@ -55,7 +55,6 @@ export const BuildSiteMap = () => {
 
         const xml = await streamToPromise(sitemap);
         createWriteStream("./public/sitemap.xml").write(xml);
-        console.log("✅ Sitemap generated at /public/sitemap.xml");
     }
 
     generateSitemap().catch(console.error);

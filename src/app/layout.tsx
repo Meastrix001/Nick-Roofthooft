@@ -8,6 +8,7 @@ import { BuildSiteMap } from "@/utils/sitemap/sitemap.builder";
 import { SiteHead } from "@/providers/headLinks";
 import { theme } from "@/constants/theme"
 import LanguageSwitcher from "@/components/languageSwitcher/LanguageSwitcher";
+import { BackBtn } from "@/components/backBtn/backBtn";
 
 BuildSiteMap()
 export default function RootLayout({
@@ -25,8 +26,15 @@ export default function RootLayout({
           <Box>
             <Flex direction="column" minHeight="100vh">
 
-              <Flex align={"end"} justify={"end"} mb={{ initial: "4", lg: "0" }} position={{ initial: "relative", lg: "absolute" }} top={"4"} right={"4"} style={{ zIndex: 1000 }}>
-                <LanguageSwitcher />
+              <Flex align={"center"} justify={"between"}>
+                <Flex align={"end"} justify={"end"} mb={{ initial: "4", lg: "0" }} position={{ initial: "relative", lg: "absolute" }} top={"4"} left={"4"} style={{ zIndex: 1000 }}>
+                  <BackBtn />
+                </Flex>
+
+                <Flex align={"end"} justify={"end"} mb={{ initial: "4", lg: "0" }} position={{ initial: "relative", lg: "absolute" }} top={"4"} right={"4"} style={{ zIndex: 1000 }}>
+                  <LanguageSwitcher />
+                </Flex>
+
               </Flex>
 
               <Box flexGrow="1">{children}
