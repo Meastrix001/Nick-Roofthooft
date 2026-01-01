@@ -3,7 +3,8 @@ import { MixIcon, RocketIcon, StarFilledIcon } from "@radix-ui/react-icons";
 
 export const lang_en = {
   constants: {
-    name: "Nick Roofthooft"
+    name: "Nick Roofthooft",
+    backBtn: "Back home"
   },
 
   landing: {

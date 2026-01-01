@@ -4,6 +4,7 @@ import { MixIcon, RocketIcon, StarFilledIcon } from "@radix-ui/react-icons";
 export const lang_nl = {
     constants: {
         name: "Nick Roofthooft",
+        backBtn: "Startpagina"
     },
 
     landing: {

@@ -1,5 +1,7 @@
 "use client";
 
+import { PageLang } from "@/models/pageLang.model";
+import { LanguageKeys } from "@/utils/i18n/LanguageKeys";
 import { ChevronLeftIcon } from "@radix-ui/react-icons";
 import { Button } from "@radix-ui/themes";
 import { useRouter, usePathname } from "next/navigation";
@@ -29,7 +31,7 @@ export const BackBtn = () => {
             variant="solid"
         >
             <ChevronLeftIcon width={20} height={20} />
-            Back home
+            {LanguageKeys[lang as PageLang].constants.backBtn}
         </Button>
     );
 };
