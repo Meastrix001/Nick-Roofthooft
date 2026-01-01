@@ -3,7 +3,7 @@ import { brand } from "@/theme/brand.config";
 import { LanguageKeys } from "@/utils/i18n/LanguageKeys";
 import { Metadata } from "next";
 
-const pageLanguage = "en"
+const pageLanguage = "nl"
 export default function ContactPageEn() {
     return <ContactPage lang={pageLanguage} />
 }

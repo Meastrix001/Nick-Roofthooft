@@ -2,8 +2,10 @@
 import { Box, Container, Heading, Section, Text } from "@radix-ui/themes";
 import { WorkList } from "./WorkList/WorkList";
 import { useRouter } from "next/navigation";
+import { PageLang } from "@/models/pageLang.model";
+import { LanguageKeys } from "@/utils/i18n/LanguageKeys";
 
-export default function WorkPage() {
+export default function WorkPage({ lang }: { lang: PageLang }) {
     const router = useRouter();
 
     return (
@@ -14,33 +16,36 @@ export default function WorkPage() {
                     align={"center"}
                     as="h1"
                     size={{ initial: "8", lg: "9" }}
-                    onClick={() => router.push("/")}
+                    onClick={() => router.push(`/${lang}`)}
                 >
-                    Nick Roofthooft
+                    {LanguageKeys[lang].work.name}
                 </Heading>
             </Box>
 
             <Box>
                 <Text as="p" color="gray">
-                    5+ years of coding experience
+                    {LanguageKeys[lang].work.exp}
                 </Text>{" "}
 
                 <Text as="p" color="gray">
-                    Full-time employed for the last 3+ years.
+                    {LanguageKeys[lang].work.workExp}
                 </Text>
 
                 <Heading as="h2" size={"8"}>
-                    Discover my work
+                    {LanguageKeys[lang].work.discover}
                 </Heading>
+
+                <Text as="p" color="gold">
+                    {LanguageKeys[lang].work.offer}
+                </Text>
 
                 <Section>
                     <Text as="p" color="gray">
-                        I currently work in a start-up company, this means all work I do falls under a NDA, and such I cannot show any work I have done at my work.
-                    </Text>
+                        {LanguageKeys[lang].work.disclaimer}                    </Text>
                     <Text as="p" color="gray" mb={"4"}>
-                        Below is a List of my freelance work.
+                        {LanguageKeys[lang].work.list}
                     </Text>
-                    <WorkList />
+                    <WorkList lang={lang} />
                 </Section>
             </Box>
         </Container>

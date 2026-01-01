@@ -1,3 +1,1 @@
-export type PageLang = {
-    lang: "en" | "et"
-}
+export type PageLang = "en" | "nl"

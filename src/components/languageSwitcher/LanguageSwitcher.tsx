@@ -1,80 +1,66 @@
 "use client";
 
+import { PageLang } from "@/models/pageLang.model";
 import { useLanguageStore } from "@/store/appStore";
+import { LanguageOptions } from "@/utils/i18n/LanguageKeys";
 import { Button, Flex, Spinner } from "@radix-ui/themes";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
-  const language = useLanguageStore((s) => s.language)
-  const setLanguage = useLanguageStore((s) => s.setLanguage)
-  const [hydrated, setHydrated] = useState(false)
+  const language = useLanguageStore((s) => s.language);
+  const setLanguage = useLanguageStore((s) => s.setLanguage);
+  const [hydrated, setHydrated] = useState(false);
 
-  const languages = [{
-    key: "English",
-    val: "en"
-  },
-  {
-    key: "Eesti",
-    val: "et"
-  }
-  ]
-
-  const handleLanguageChange = async (lang: 'en' | 'et') => {
+  const handleLanguageChange = async (lang: PageLang) => {
     if (typeof window === "undefined") return;
 
-    let currentPath = window.location.pathname;
-    setLanguage(lang)
-    if (lang === "et" && window.location.pathname === "/") {
-      return
-    }
-    if (lang === "en" && window.location.pathname === "/en") {
-      return
-    }
+    const currentPathname = window.location.pathname;
+    setLanguage(lang);
 
-    if (window.location.pathname === "/et") {
-      router.push(`/${lang}/`);
-    }
-
-    if (window.location.pathname === "/en" || window.location.pathname === "") {
-      router.push(`/`);
+    // Handle root paths
+    if (currentPathname === "/" || currentPathname === "/en" || currentPathname === "/nl") {
+      if (lang === "en") {
+        router.push("/");
+      } else {
+        router.push(`/${lang}`);
+      }
+      return;
     }
 
-    else {
-      currentPath = currentPath.replace("/et/", ``);
-      currentPath = currentPath.replace("/en/", ``);
+    // Remove language prefix - make trailing slash optional
+    const cleanPath = currentPathname.replace(/^\/(nl|en)\/?/, "");
 
-      currentPath = `/${lang}/${currentPath}/`;
-
-      router.push(currentPath);
-
+    // Build new path
+    if (lang === "en") {
+      router.push(`/${cleanPath}`);
+    } else {
+      router.push(`/${lang}/${cleanPath}`);
     }
   };
 
-
-  // Wait until Zustand rehydrates from localStorage
   useEffect(() => {
-    setHydrated(true)
-  }, [])
+    setHydrated(true);
+  }, []);
 
-  if (!hydrated) return <Spinner />
+  if (!hydrated) return <Spinner />;
 
   return (
     <Flex justify={{ initial: "center", lg: "end" }} gap="4">
-      {languages.map((langObj) => {
-
-        return <Button
-          key={""}
-          className="cursor"
-          size="3"
-          variant={"solid"}
-          color={language === langObj.val ? "green" : "gold"}
-
-          onClick={() => handleLanguageChange(langObj.val as "et")}
-        >
-          {langObj.key}
-        </Button>
+      {Object.entries(LanguageOptions).map(([key, value]) => {
+        return (
+          <Button
+            key={key}
+            className="cursor"
+            size={{ initial: "1", lg: "2" }}
+            variant={language === value ? "solid" : "outline"}
+            color="gold"
+            onClick={() => handleLanguageChange(value as PageLang)}
+          >
+            {key}
+          </Button>
+        );
       })}
     </Flex>
   );

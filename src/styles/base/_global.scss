@@ -97,3 +97,14 @@ h1.rt-Heading {
   font-optical-sizing: auto;
   font-weight: 500;
 }
+
+.gold-border {
+  border: 1px solid var(--gold-9);
+}
+.text-gold {
+  color: var(--gold-9);
+}
+
+.bg-gold {
+  background-color: (--gold-9);
+}

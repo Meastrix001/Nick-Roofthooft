@@ -9,7 +9,7 @@ const pageLanguage = "en"
 
 export default function LandingPageEn() {
   return (
-    <Home />
+    <Home lang={pageLanguage} />
   )
 }
 

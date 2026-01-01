@@ -7,7 +7,7 @@ const pageLanguage = "en"
 
 
 export default function LandingPageEn() {
-    return <Home />
+    return <Home lang={pageLanguage} />
 }
 
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         canonical: `${brand.company.site}en/`,
         languages: {
             en: `${brand.company.site}en/`,
-            et: `${brand.company.site}`,
+            nl: `${brand.company.site}nl/`,
         },
     },
     title: LanguageKeys[pageLanguage].SEO.landing.title,

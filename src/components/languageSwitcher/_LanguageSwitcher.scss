@@ -1,0 +1,18 @@
+.language-switcher__mobile {
+  display: block;
+}
+
+.language-switcher__desktop {
+  display: none;
+}
+
+/* lg breakpoint (Radix uses ~1024px semantics) */
+@media (min-width: 1024px) {
+  .language-switcher__mobile {
+    display: none;
+  }
+
+  .language-switcher__desktop {
+    display: flex;
+  }
+}

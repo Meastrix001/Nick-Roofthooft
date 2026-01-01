@@ -10,8 +10,10 @@ import {
 import { ContactInfoList } from "./ContactInfoList/ContactInfoList";
 import { useRouter } from "next/navigation";
 import { InViewWrapper } from "@/hooks/InViewWrapper";
+import { PageLang } from "@/models/pageLang.model";
+import { LanguageKeys } from "@/utils/i18n/LanguageKeys";
 
-export default function ContactPage() {
+export default function ContactPage({ lang }: { lang: PageLang }) {
   const Router = useRouter();
 
   return (
@@ -25,12 +27,12 @@ export default function ContactPage() {
         className="cursor"
       >
         <Heading
-          onClick={() => Router.push("/")}
+          onClick={() => Router.push(`/${lang}`)}
           align={"center"}
           as="h1"
           size={{ initial: "8", lg: "9" }}
         >
-          Nick Roofthooft
+          {LanguageKeys[lang].constants.name}
         </Heading>
       </Flex>
 
@@ -44,7 +46,7 @@ export default function ContactPage() {
         mt={{ initial: "7rem", lg: "0" }}
       >
         <InViewWrapper direction="left">
-          <ContactInfoList />
+          <ContactInfoList lang={lang} />
         </InViewWrapper>
 
         <Box className="contact__dice">

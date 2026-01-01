@@ -258,11 +258,10 @@ export const casesData = [
 
 
 export interface WorkItem {
-  number: string;
-  name: string;
-  logo: string;
-  link: string;
   linkTo: string;
+  logo: string;
+  name: string;
+  link: string;
   descs: string[];
   github: string;
   tags: string[];
