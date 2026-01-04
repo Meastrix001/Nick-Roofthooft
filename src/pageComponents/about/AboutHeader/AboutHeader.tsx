@@ -1,7 +1,7 @@
 "use client"
 import { PageLang } from "@/models/pageLang.model"
 import { LanguageKeys } from "@/utils/i18n/LanguageKeys"
-import { Box, Heading, Text } from "@radix-ui/themes"
+import { Avatar, Box, Flex, Heading, Text } from "@radix-ui/themes"
 import { useRouter } from "next/navigation";
 
 export const AboutHeader = ({ lang }: { lang: PageLang }) => {
@@ -17,6 +17,11 @@ export const AboutHeader = ({ lang }: { lang: PageLang }) => {
         >
             {LanguageKeys[lang].about.hero.name}
         </Heading>
+
+        <Flex align={"center"} justify={"center"} mb={"4"}>
+            <Avatar radius="full" src="/static/picture_me_2.jpg" fallback="Picture me" size={"9"} />
+        </Flex>
+
         <Text as="p" align="center" className="subtitle" size="5">
             {LanguageKeys[lang].about.hero.title}
         </Text>
