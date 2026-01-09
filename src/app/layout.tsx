@@ -46,6 +46,7 @@ export default function RootLayout({
             </Flex>
           </Box>
         </Theme>
+
       </body>
     </html >
   );
