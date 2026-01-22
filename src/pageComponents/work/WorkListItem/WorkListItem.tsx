@@ -17,12 +17,12 @@ export const WorkListItem = ({ lang, item }: { lang: PageLang, item: WorkItem })
 
                     <Grid columns={{ initial: "1", lg: "2" }} gap={{ initial: "2", lg: "5" }}>
 
-                        <Flex align={"center"} style={{ backgroundColor: "white" }} >
+                        <Flex align={"center"} style={{ backgroundColor: item.bg }} >
                             <AspectRatio ratio={16 / 9}>
                                 <img
+                                    style={{ maxWidth: "100%" }}
                                     src={item.logo}
                                     alt=""
-                                    width={"100%"}
                                     height={"100%"}
                                 />
                             </AspectRatio>

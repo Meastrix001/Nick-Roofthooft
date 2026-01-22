@@ -25,8 +25,48 @@ export const Nl_workCases = [
             "Animations"
         ],
         date: "09/2025 - freelance",
+        bg: "white"
     },
-
+    {
+        linkTo: "Click to Preview.",
+        logo: "/static/cases/messenger.jpg",
+        name: "Level-D",
+        link: "https://github.com/Meastrix001/MessengerPortal",
+        descs: [
+            "Meta heeft de Messenger-app voor Windows stopgezet en duwt je naar de Facebook-app.",
+            "Dit is een super simpele Electron-app die de Messenger.com site laadt, waardoor het nog steeds een aparte app blijft, in plaats van Facebook of een webtabblad.",
+            "Dit is alleen voor privégebruik.",
+        ],
+        github: "",
+        tags: [
+            "Electron"
+        ],
+        date: "2026 - QoL project",
+        bg: ""
+    },
+    {
+        linkTo: "Click to Preview.",
+        logo: "/static/cases/leveld.jpg",
+        name: "Level-D",
+        link: "https://level-d.vercel.app/",
+        descs: [
+            "WIP demo site, gebaseerd op go-to tech stack.",
+            "Het is gebouwd met React, Typescript & NextJs, met Radix + Scss voor styling.",
+            "Maar meer animatie-zwaar dan ik normaal doe.",
+        ],
+        github: "",
+        tags: [
+            "NextJs",
+            "Radix-UI",
+            "SCSS",
+            "React",
+            "Javascript",
+            "Typescript",
+            "Animations"
+        ],
+        date: "2026 - Side-project",
+        bg: "black"
+    },
     {
         linkTo: "Klik om te bekijken.",
         logo: "/static/cases/logistics.png",
@@ -49,7 +89,8 @@ export const Nl_workCases = [
             "Typescript",
             "Animations"
         ],
-        date: "Work in progress - voorbeeld/demo project"
+        date: "Work in progress - voorbeeld/demo project",
+        bg: "white"
     },
 
     {
@@ -71,7 +112,8 @@ export const Nl_workCases = [
             "Typescript",
             "Animations"
         ],
-        date: "2025 - Freelance, voorbeeld/demo project"
+        date: "2025 - Freelance, voorbeeld/demo project",
+        bg: "white"
     },
 
     {
@@ -90,6 +132,7 @@ export const Nl_workCases = [
         github: "",
         tags: ["VueJS", "HTML", "CSS", "AWS"],
         date: "2023 - freelance",
+        bg: "white"
     },
 
     {
@@ -112,5 +155,6 @@ export const Nl_workCases = [
         github: "https://github.com/pgmgent-2122-im/diorama-Meastrix001",
         tags: ["React", "ThreeJS", "Blender", "HTML", "CSS"],
         date: "2020 - 2e jaar, universiteit",
+        bg: "white"
     }
 ]

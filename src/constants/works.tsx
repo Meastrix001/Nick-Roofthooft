@@ -165,6 +165,27 @@ export const casesData = [
     ],
     date: "09/2025 - freelance",
   },
+  {
+    linkTo: "Click to Preview.",
+    logo: "/static/cases/leveld.jpg",
+    name: "Level-D",
+    link: "https://level-d.vercel.app/",
+    descs: [
+      "WIP demo site, based on my go-to tech stack.",
+      "Its built on React, Typescript & NextJs, using Radix + Scss for styling.",
+    ],
+    github: "",
+    tags: [
+      "NextJs",
+      "Radix-UI",
+      "SCSS",
+      "React",
+      "Javascript",
+      "Typescript",
+      "Animations"
+    ],
+    date: "2026 - Side-project",
+  },
 
   {
     linkTo: "Click to Preview.",
@@ -266,4 +287,5 @@ export interface WorkItem {
   github: string;
   tags: string[];
   date: string;
+  bg: string
 }

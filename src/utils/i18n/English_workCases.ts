@@ -25,8 +25,49 @@ export const En_workCases = [
             "Animations"
         ],
         date: "09/2025 - freelance",
+        bg: "white"
     },
-
+    {
+        linkTo: "Click to Preview.",
+        logo: "/static/cases/leveld.jpg",
+        name: "Level-D",
+        link: "https://level-d.vercel.app/",
+        descs: [
+            "WIP demo site, based on my go-to tech stack.",
+            "Its built on React, Typescript & NextJs, using Radix + Scss for styling.",
+            "But more animation heavy then I usualy.",
+        ],
+        github: "",
+        tags: [
+            "NextJs",
+            "Radix-UI",
+            "SCSS",
+            "React",
+            "Javascript",
+            "Typescript",
+            "Animations"
+        ],
+        date: "2026 - Side-project",
+        bg: "black"
+    },
+    {
+        linkTo: "Click to Preview.",
+        logo: "/static/cases/messenger.jpg",
+        name: "Messenger Portal",
+        link: "https://github.com/Meastrix001/MessengerPortal",
+        descs: [
+            "Meta discontinued the Messenger app for Windows and pushes you to the Facebook app.",
+            "This is a super simple Electron app that loads the Messenger.com site, keeping it still a seperate app, instead of Facebook or a web tab.",
+            "Made this to solve a issue I had myself.",
+            "This is for private use only.",
+        ],
+        github: "",
+        tags: [
+            "Electron"
+        ],
+        date: "2026 - QoL project",
+        bg: ""
+    },
     {
         linkTo: "Click to Preview.",
         logo: "/static/cases/logistics.png",
@@ -49,7 +90,8 @@ export const En_workCases = [
             "Typescript",
             "Animations"
         ],
-        date: "Work in progress - Side project"
+        date: "Work in progress - Side project",
+        bg: "white"
     },
 
     {
@@ -71,7 +113,8 @@ export const En_workCases = [
             "Typescript",
             "Animations"
         ],
-        date: "2025 - Freelance, preview/demo site"
+        date: "2025 - Freelance, preview/demo site",
+        bg: "white"
     },
 
     {
@@ -90,6 +133,7 @@ export const En_workCases = [
         github: "",
         tags: ["VueJS", "HTML", "CSS", "AWS"],
         date: "2023 - freelance",
+        bg: "white"
     },
 
     {
@@ -112,5 +156,6 @@ export const En_workCases = [
         github: "https://github.com/pgmgent-2122-im/diorama-Meastrix001",
         tags: ["React", "ThreeJS", "Blender", "HTML", "CSS"],
         date: "2020 - 2nd year, university",
+        bg: "white"
     }
 ]
