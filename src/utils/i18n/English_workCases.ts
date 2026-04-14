@@ -1,4 +1,5 @@
 export const En_workCases = [
+
     {
         linkTo: "Click to Preview.",
         logo: "/static/cases/bbs.png",
@@ -26,6 +27,32 @@ export const En_workCases = [
         ],
         date: "09/2025 - freelance",
         bg: "white"
+    },
+    {
+        linkTo: "Click to Preview.",
+        logo: "/static/cases/renotes.svg",
+        name: "ReNotes",
+        link: "https://re-notes-self.vercel.app/",
+        descs: [
+            "ReNotes is a desktop sticky-notes app I built as a side project, after years of frustriations of text, note and important data not syncing/saving",
+            "It is built with privacy in mind, while also being fast, offline-first, and end-to-end encrypted.",
+            "Built with Electron, React, TypeScript and Radix UI, backed by Firebase (Auth, Firestore, Cloud Functions) for optional account-based sync.",
+            "Every note is encrypted client-side with AES-GCM using a key derived from the user's password via PBKDF2, the server never sees plaintext. Notes work fully offline and sync when signed in.",
+            "Proper Electron security architecture: contextIsolation, preload-based IPC bridge, no nodeIntegration in the renderer, input-validated main process handlers.",
+            "Multi-window support,, pin-on-top, per-note locking, auto-updater, and a built distributable for direct download plus a separate Microsoft Store build.",
+        ],
+        github: "",
+        tags: [
+            "NextJs",
+            "Radix-UI",
+            "Firebase",
+            "React",
+            "Javascript",
+            "Typescript",
+            "Electron",
+        ],
+        date: "04/2026 - personal",
+        bg: ""
     },
     {
         linkTo: "Click to Preview.",
