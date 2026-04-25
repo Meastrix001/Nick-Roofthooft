@@ -1,5 +1,6 @@
 import { Nl_workCases } from "./Nederlands_workCases";
 import { MixIcon, RocketIcon, StarFilledIcon } from "@radix-ui/react-icons";
+import { coding, fullTime } from "@/utils/experienceYears";
 
 export const lang_nl = {
     constants: {
@@ -21,11 +22,11 @@ export const lang_nl = {
 
     work: {
         name: "Nick Roofthooft",
-        exp: "5+ jaar ervaring met programmeren.",
-        workExp: "Voltijds werknemend voor de laatste 3+ jaar.",
+        exp: `${coding.years} jaar ${coding.months} maanden ervaring met programmeren.`,
+        workExp: `Voltijds werknemend voor de laatste ${fullTime.years} jaar ${fullTime.months} maanden.`,
         discover: "Ontdek mijn werk",
         offer:
-            "Beginnent van 2026, Bied ik ook freelance werk aan als bijberoep. neem contact op voor mee info of offertes.",
+            "",
 
         disclaimer:
             "Ik werk full-time voor een opstarted prive bedrijf. Daardoor valt all dat werk onder een NDA, waardoor ik dit niet kan tonen.",
@@ -51,8 +52,8 @@ export const lang_nl = {
             location: "Tallinn, Estland",
         },
         badges: {
-            experience: "5+ Jaar Ervaring",
-            fullTime: "3+ Jaar Fulltime",
+            experience: `${coding.years} Jaar ${coding.months} Maanden Ervaring`,
+            fullTime: `${fullTime.years} Jaar ${fullTime.months} Maanden Fulltime`,
             specialist: "Specialist Gaming Events",
         },
         summary: {

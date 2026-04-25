@@ -1,5 +1,6 @@
 import { En_workCases } from "./English_workCases";
 import { MixIcon, RocketIcon, StarFilledIcon } from "@radix-ui/react-icons";
+import { coding, fullTime } from "@/utils/experienceYears";
 
 export const lang_en = {
   constants: {
@@ -21,10 +22,10 @@ export const lang_en = {
 
   work: {
     name: "Nick Roofthooft",
-    exp: "5+ years of coding experience.",
-    workExp: "Full-time employed for the last 3+ years.",
+    exp: `${coding.years} years ${coding.months} months of coding experience.`,
+    workExp: `Full-time employed for the last ${fullTime.years} years ${fullTime.months} months.`,
     discover: "Discover my freelance work",
-    offer: "Starting from 2026, I also offer freelance work. Contact me for more info or requests.",
+    offer: "",
     disclaimer: "I work in a start-up company, this means all company work I do falls under a NDA, and such I cannot show any work I have done at my work.",
     list: "",
 
@@ -51,8 +52,8 @@ export const lang_en = {
       location: "Tallinn, Estonia"
     },
     badges: {
-      experience: "5+ Years Experience",
-      fullTime: "3+ Years Full-Time",
+      experience: `${coding.years} Years ${coding.months} Months Experience`,
+      fullTime: `${fullTime.years} Years ${fullTime.months} Months Full-Time`,
       specialist: "Gaming Events Specialist"
     },
     summary: {

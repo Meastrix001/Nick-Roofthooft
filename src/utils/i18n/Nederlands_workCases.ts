@@ -28,24 +28,59 @@ export const Nl_workCases = [
         bg: "white"
     },
     {
-        linkTo: "Click to Preview.",
-        logo: "/static/cases/messenger.jpg",
-        name: "Level-D",
-        link: "https://github.com/Meastrix001/MessengerPortal",
+        linkTo: "Klik om te bekijken.",
+        logo: "/static/cases/mealist.png",
+        name: "Mealist",
+        link: "https://mealist-zeta.vercel.app/",
         descs: [
-            "Meta heeft de Messenger-app voor Windows stopgezet en duwt je naar de Facebook-app.",
-            "Dit is een super simpele Electron-app die de Messenger.com site laadt, waardoor het nog steeds een aparte app blijft, in plaats van Facebook of een webtabblad.",
-            "Dit is alleen voor privégebruik.",
+            "Mealist is een volledig AI-aangedreven recept/gerecht generator site.",
+            "Een Firebase scheduled function draait 2-3 keer per dag en genereert elke keer een recept dat verschilt van het vorige.",
+            "Het gebruikt de Claude API (Opus) voor alle tekst- en receptgeneratie, terwijl de OpenAI API wordt gebruikt voor het genereren van afbeeldingen op basis van promptresultaten van de Claude API.",
+            "Ik maakte dit om het gevoel te overwinnen van altijd vergelijkbare gerechten te eten, en om te helpen met het vinden van nieuwe gerechten en het plannen van eten voor de week.",
+        ],
+        github: "https://github.com/Meastrix001/Mealist",
+        tags: [
+            "NextJs",
+            "Radix-UI",
+            "SCSS",
+            "Firebase",
+            "React",
+            "Javascript",
+            "Typescript",
+            "Claude API",
+            "OpenAI API",
+        ],
+        date: "04/2026 - QoL project",
+        bg: "white"
+    },
+    {
+        linkTo: "Klik om te bekijken.",
+        logo: "/static/cases/renotes.svg",
+        name: "ReNotes",
+        link: "https://re-notes-self.vercel.app/",
+        descs: [
+            "ReNotes is een desktop sticky-notes app die ik als zijproject bouwde, na jaren van frustratie over tekst, notities en belangrijke data die niet synchroniseerden of werden opgeslagen.",
+            "Het is gebouwd met privacy in gedachten, maar ook snel, offline-first en end-to-end versleuteld.",
+            "Gebouwd met Electron, React, TypeScript en Radix UI, ondersteund door Firebase (Auth, Firestore, Cloud Functions) voor optionele accountgebaseerde synchronisatie.",
+            "Elke notitie wordt client-side versleuteld met AES-GCM via een sleutel afgeleid van het wachtwoord van de gebruiker via PBKDF2. De server ziet nooit plaintext. Notities werken volledig offline en synchroniseren wanneer ingelogd.",
+            "Correcte Electron-beveiligingsarchitectuur: contextIsolation, preload-gebaseerde IPC bridge, geen nodeIntegration in de renderer, input-gevalideerde main process handlers.",
+            "Multi-window ondersteuning, pin-on-top, per-notitie vergrendeling, auto-updater en een gebouwde distributable voor directe download plus een aparte Microsoft Store build.",
         ],
         github: "",
         tags: [
-            "Electron"
+            "NextJs",
+            "Radix-UI",
+            "Firebase",
+            "React",
+            "Javascript",
+            "Typescript",
+            "Electron",
         ],
-        date: "2026 - QoL project",
+        date: "04/2026 - QoL project",
         bg: ""
     },
     {
-        linkTo: "Click to Preview.",
+        linkTo: "Klik om te bekijken.",
         logo: "/static/cases/leveld.jpg",
         name: "Level-D",
         link: "https://level-d.vercel.app/",
@@ -66,6 +101,24 @@ export const Nl_workCases = [
         ],
         date: "2026 - Side-project",
         bg: "black"
+    },
+    {
+        linkTo: "Klik om te bekijken.",
+        logo: "/static/cases/messenger.jpg",
+        name: "Messenger Portal",
+        link: "https://github.com/Meastrix001/MessengerPortal",
+        descs: [
+            "Meta heeft de Messenger-app voor Windows stopgezet en duwt je naar de Facebook-app.",
+            "Dit is een super simpele Electron-app die de Messenger.com site laadt, waardoor het nog steeds een aparte app blijft, in plaats van Facebook of een webtabblad.",
+            "Gemaakt om een probleem op te lossen dat ik zelf had.",
+            "Dit is alleen voor privégebruik.",
+        ],
+        github: "",
+        tags: [
+            "Electron"
+        ],
+        date: "2026 - QoL project",
+        bg: ""
     },
     {
         linkTo: "Klik om te bekijken.",

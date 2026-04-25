@@ -25,7 +25,33 @@ export const En_workCases = [
             "Typescript",
             "Animations"
         ],
-        date: "09/2025 - freelance",
+        date: "09/2025 - Freelance",
+        bg: "white"
+    },
+    {
+        linkTo: "Click to Preview.",
+        logo: "/static/cases/mealist.png",
+        name: "Mealist",
+        link: "https://mealist-zeta.vercel.app/",
+        descs: [
+            "Mealist is a Fully AI ran recipe/dish generator site.",
+            "A firebase scheduled function runs 2-3 times a day, every time creating a recipe that is different than the previous.",
+            "It is using Claude API (Opus) for all text/recipe generation, while using OpenAI API for the image generation based on a promt results from Claude API.",
+            "I made this to overcome the feeling of constantly eating similar foods in a loop, and to help with the struggle of finding new dishes, and planning food for the week.",
+        ],
+        github: "https://github.com/Meastrix001/Mealist",
+        tags: [
+            "NextJs",
+            "Radix-UI",
+            "SCSS",
+            "Firebase",
+            "React",
+            "Javascript",
+            "Typescript",
+            "Claude API",
+            "OpenAI API",
+        ],
+        date: "04/2026 - QoL project",
         bg: "white"
     },
     {
@@ -51,7 +77,7 @@ export const En_workCases = [
             "Typescript",
             "Electron",
         ],
-        date: "04/2026 - personal",
+        date: "04/2026 - QoL project",
         bg: ""
     },
     {
@@ -60,7 +86,7 @@ export const En_workCases = [
         name: "Level-D",
         link: "https://level-d.vercel.app/",
         descs: [
-            "WIP demo site, based on my go-to tech stack.",
+            "Demo site, based on my go-to tech stack.",
             "Its built on React, Typescript & NextJs, using Radix + Scss for styling.",
             "But more animation heavy then I usualy.",
         ],
@@ -74,7 +100,7 @@ export const En_workCases = [
             "Typescript",
             "Animations"
         ],
-        date: "2026 - Side-project",
+        date: "2026 - Side Project",
         bg: "black"
     },
     {
@@ -117,7 +143,7 @@ export const En_workCases = [
             "Typescript",
             "Animations"
         ],
-        date: "Work in progress - Side project",
+        date: "2025 - Side project",
         bg: "white"
     },
 
