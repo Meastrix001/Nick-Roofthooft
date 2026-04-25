@@ -48,8 +48,8 @@ export const lang_nl = {
     about: {
         hero: {
             name: "Nick Roofthooft",
-            title: "Full Stack Engineer",
-            location: "Tallinn, Estland",
+            title: "Full Stack Developer",
+            location: "Saue, Estland",
         },
         badges: {
             experience: `${coding.years} Jaar ${coding.months} Maanden Ervaring`,
@@ -58,9 +58,9 @@ export const lang_nl = {
         },
         summary: {
             intro:
-                "In 2022 ben ik naar Estland verhuisd, op zoek naar een meer digitale levensstijl, toekomst en carrière.",
+                "In 2022 ben ik naar Estland verhuisd, op zoek naar een meer digitaal leven, toekomst en carrière.",
             bio: {
-                text: "TL;DR Ik ben een Full Stack Engineer met uitgebreide ervaring in het bouwen van webapplicaties en gaming-oplossingen voor grootschalige evenementen zoals Dreamhack, Spillexpo en meer. Gespecialiseerd in en rond het React-ecosysteem met TypeScript en Firebase, en het leveren van softwareoplossingen voor evenementen zoals Dreamhack, Spillexpo, Assembly en meer met jaarlijks 20.000+ bezoekers per evenement voor bedrijven zoals",
+                text: "Full Stack Developer met meer dan 3,5 jaar professionele ervaring. Ik bouw React- en TypeScript-applicaties aan de frontend en Node.js- en Firebase-diensten aan de backend, voornamelijk voor live gaming-evenementen zoals DreamHack en Spillexpo met meer dan 20.000 bezoekers per jaar. In 2025 heb ik de backendrol overgenomen en ben ik sindsdien verantwoordelijk voor beide kanten van de stack. Ik lever softwareoplossingen voor bedrijven zoals",
                 companies: ["Elgiganten", "Logitech", "Lego", "TCL", "Keychron"],
                 andMore: "en nog veel meer.",
             },
@@ -73,49 +73,81 @@ export const lang_nl = {
         },
         experiences: [
             {
-                role: "Full Stack Engineer",
+                role: "Full Stack Developer",
                 company: "Brandweb OÜ",
                 period: "Jan 2025 - Heden",
                 location: "Tallinn, Estland (Hybride)",
                 highlights: [
-                    "Betrokken bij het volledige software-/websiteontwikkelingsproces",
-                    "Bouwen en onderhouden van backendservices met TypeScript, Node.js en Firebase",
-                    "Ontwikkelen van Electron-apps voor game-datatracking en eventmanagement",
-                    "Maken van CS2 custom maps en leaderboards voor grote gaming events",
-                    "Ondersteuning van evenementen zoals Dreamhack, met jaarlijks 20.000+ bezoekers",
+                    "Enige BE- en gedeeltelijke FE-ontwikkelaar achter het nieuwe verkooptrainingsplatform van het bedrijf, gebouwd van een whiteboard-schets tot een volledig product",
+                    "Omgezet van 10+ branches naar één monorepo met workspaces voor de Electron-apps van het bedrijf",
+                    "Volledige backend-verantwoordelijkheid overgenomen: bouwen, onderhouden en refactoren van TypeScript-, Node.js- en Firebase-services",
+                    "Electron-applicaties ontwerpen, ontwikkelen en deployen voor live gamedata-tracking en interne evenementtools",
+                    "Firebase-beveiligingsregels, Zod-validatie en consistente CRUD-patronen opgezet voor meerdere klantprojecten",
+                    "Open game-API’s, telemetryfeeds en lokale servers geïntegreerd voor geautomatiseerde dataverwerking tijdens live evenementen",
+                    "Custom CS2-maps en live 1v1-leaderboards ontwikkeld voor DreamHack en Spillexpo, met 20.000+ bezoekers per jaar",
                 ],
             },
             {
-                role: "Junior Frontend Engineer",
+                role: "Frontend Developer",
                 company: "Brandweb OÜ",
                 period: "Nov 2022 - Jan 2025",
                 location: "Tallinn, Estland (Hybride)",
                 highlights: [
-                    "Verbeterde de codebase met een multi-clientoplossing binnen één codebase",
-                    "Ontwikkelde custom CS2 maps met Hammer Editor voor live gaming events",
-                    "Bouwde leaderboards en scoreboards voor racing-opstellingen en CS2 1v1-wedstrijden",
-                    "Verleende on-site technische ondersteuning tijdens grote gaming events",
-                    "Ontwikkelde een adminplatform met Electron voor bedrijfsbeheer",
+                    "Gedeelde codebase gebouwd en onderhouden voor meerdere klantwebsites en -apps, ter vervanging van aparte branches",
+                    "Designmockups omgezet naar responsieve productie-webapps",
+                    "Gewerkt met Firebase-authenticatie, Cloud Functions en externe API’s voor klantprojecten",
+                    "Evenement-leaderboards gebouwd, waaronder racing-telemetry-setups en CS2 1v1-scoreboards",
+                    "Meer dan 10 custom CS2-maps gemaakt in Hammer Editor die samenwerkten met onze in-house eventsoftware",
+                    "Legacy code opgeschoond, hosting geoptimaliseerd en GitHub-setup overzichtelijk gehouden",
+                    "On-site technische ondersteuning verleend bij DreamHack en Spillexpo",
+                ],
+            },
+            {
+                role: "Customer Support Agent",
+                company: "Webhelp Enterprise",
+                period: "Okt 2022 - Nov 2022",
+                location: "Tallinn, Estland",
+                highlights: [
+                    "Eerstelijnscustomerservice voor Webhelp Nordic",
+                    "Kortdurende overbruggingsfunctie na de verhuizing naar Estland, in afwachting van een developersfunctie",
+                ],
+            },
+            {
+                role: "Deeltijds Productiemedewerker",
+                company: "Inex NV",
+                period: "Mei 2017 - Mei 2022",
+                location: "België",
+                highlights: [
+                    "Werkte avonden, weekenden en zomers tijdens de middelbare school en de programmeerrichting, vaak nachtshifts terwijl ik overdag les volgde",
+                    "Wisselde door vrijwel elke machine en rol op de werkvloer door de jaren heen",
+                    "Groeide uit tot een van de meest flexibele en betrouwbare medewerkers van het team",
                 ],
             },
         ],
         education: [
             {
-                degree: "Associate Degree in Programming, niet afgerond",
-                school: "Arteveldehogeschool",
+                degree: "Associate Degree in Programming (cursuswerk voltooid)",
+                school: "Artevelde University",
                 period: "Sep 2020 - Aug 2022",
-                location: "Gent, Vlaanderen, België",
+                location: "Gent, België",
                 description:
-                    "Uitgebreide 2-jarige programmeeropleiding met focus op full-stack webdevelopment",
-                note: "* Niet afgerond wegens ongeplande omstandigheden, Ik ben sneller naar Estland moeten verhuizen dan gepland.",
+                    "Full-stack webdevelopment-cursussen met zowel frontend- als backendtechnologieën",
+                note: "* Goede resultaten gedurende de gehele opleiding. Verhuisd naar Estland voor het behalen van het certificaat.",
                 skills: [
-                    "JavaScript, TypeScript, HTML, CSS/SCSS/Sass",
-                    "React, Vue.js frameworks",
-                    "Backend: Node.js, GraphQL, REST API’s, Firebase",
-                    "Database-structurering en -beheer",
-                    "Design tools: Adobe Suite, Blender, Figma",
-                    "Aanvullend: PHP, Static Site Generators, GitHub Pages, CMS-platformen",
+                    "HTML5, CSS en SCSS, JavaScript, TypeScript",
+                    "React, Node.js, GraphQL, REST API’s, Firebase",
+                    "PHP, databaseontwerp, static site generators, CMS-platformen",
+                    "Figma, Blender, Adobe suite",
                 ],
+            },
+            {
+                degree: "Secundair Onderwijs, Elektriciteit",
+                school: "Technische Middelbare School",
+                period: "2014 - 2020",
+                location: "België",
+                description: "Technisch diploma in elektrische installaties",
+                note: "",
+                skills: [],
             },
         ],
         skills: [
@@ -130,32 +162,36 @@ export const lang_nl = {
             "Electron",
             "SCSS",
             "Redux",
+            "Zustand",
+            "Zod",
+            "Radix UI",
+            "Vue.js",
         ],
         primaryStack: {
             label: "Primaire Stack:",
             stack:
-                "React + TypeScript (strict) + Vite • Firebase • Node.js • Jotai • Electron • SCSS",
+                "React + TypeScript (strict) + Vite • Firebase • Node.js • Jotai • Zustand • Electron • SCSS",
         },
         specializations: [
             {
                 icon: RocketIcon,
                 title: "Gaming Events",
                 description:
-                    "Custom CS2 maps, leaderboards en realtime eventmanagementsystemen voor Dreamhack en andere grote gaming events",
+                    "Custom CS2-maps, live leaderboards en realtime eventmanagementsystemen voor DreamHack, Spillexpo en andere grote gaming-evenementen",
                 color: "violet",
             },
             {
                 icon: MixIcon,
                 title: "Full Stack Development",
                 description:
-                    "End-to-end ontwikkeling met TypeScript, React, Node.js, Firebase serverless functies en Electron desktop apps",
+                    "End-to-end ontwikkeling met volledige verantwoordelijkheid voor frontend en backend: TypeScript, React, Node.js, Firebase en Electron",
                 color: "cyan",
             },
             {
                 icon: StarFilledIcon,
                 title: "Event Support",
                 description:
-                    "On-site technische ondersteuning en probleemoplossing tijdens live gaming events met duizenden deelnemers",
+                    "On-site technische ondersteuning en live probleemoplossing tijdens gaming-evenementen met 20.000+ deelnemers",
                 color: "gold",
             },
         ],
