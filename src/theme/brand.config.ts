@@ -1,26 +1,16 @@
-import { ThemeProps } from "@radix-ui/themes";
+// Single source of truth for the production URL.
+// Override per-environment with NEXT_PUBLIC_SITE_URL (e.g. in .env / Vercel).
+const SITE_URL =
+  (process.env.NEXT_PUBLIC_SITE_URL || "https://nick-roofthooft.vercel.app").replace(/\/+$/, "") + "/";
 
 export const brand = {
   defaultLanguage: "en",
   company: {
-    site: "https://www.beautybystiina.ee/",
-    name: "Company name",
+    site: SITE_URL,
+    name: "Nick Roofthooft",
     logo: {
-      src: "/static/logos/logo_demo.jpg",
-      alt: "Your Company Logo",
-      width: 50,
-      height: 50,
+      src: "/static/picture_me_2.jpg",
+      alt: "Nick Roofthooft",
     },
-    colorPrimary: "#eedec5",
-    colorSecondary: "#f7b1b0"
   },
-
-  theme: {
-    appearance: "dark",
-    accentColor: "blue",
-    grayColor: "slate",
-    panelBackground: "solid",
-    scaling: "100%",
-    radius: "none",
-  } as ThemeProps,
 };

@@ -12,6 +12,7 @@ export const lang_nl = {
         name: "Nick Roofthooft",
         workType: "Freelance",
         jobType: "Full Stack Developer",
+        tagline: "Ik bouw realtime systemen voor live gaming-evenementen met 20.000+ bezoekers.",
 
         buttons: {
             work: "Mijn cases",
@@ -29,12 +30,12 @@ export const lang_nl = {
             "",
 
         disclaimer:
-            "Ik werk full-time voor een opstarted prive bedrijf. Daardoor valt all dat werk onder een NDA, waardoor ik dit niet kan tonen.",
+            "Ik werk fulltime bij een start-up, dus dat werk valt onder een NDA en kan ik hier niet tonen. Alles hieronder is mijn eigen freelance- en zijprojectwerk.",
         list: "",
 
         labels: {
             dateReason: "Datum & Reden:",
-            techUsed: "Gebruikte technology",
+            techUsed: "Gebruikte technologie",
             clickToPreview: "Klik om te bekijken.",
         },
     },
@@ -43,6 +44,7 @@ export const lang_nl = {
 
     contact: {
         header: "Neem contact op",
+        cta: "Mail me",
     },
 
     about: {
@@ -60,8 +62,8 @@ export const lang_nl = {
             intro:
                 "In 2022 ben ik naar Estland verhuisd, op zoek naar een meer digitaal leven, toekomst en carrière.",
             bio: {
-                text: "Full Stack Developer met meer dan 3,5 jaar professionele ervaring. Ik bouw React- en TypeScript-applicaties aan de frontend en Node.js- en Firebase-diensten aan de backend, voornamelijk voor live gaming-evenementen zoals DreamHack en Spillexpo met meer dan 20.000 bezoekers per jaar. In 2025 heb ik de backendrol overgenomen en ben ik sindsdien verantwoordelijk voor beide kanten van de stack. Ik lever softwareoplossingen voor bedrijven zoals",
-                companies: ["Elgiganten", "Logitech", "Lego", "TCL", "Keychron"],
+                text: "Full Stack Developer met meer dan 3,5 jaar professionele ervaring. Ik bouw React- en TypeScript-frontends en Node.js- en Firebase-backends, voornamelijk voor live gaming-evenementen zoals DreamHack en Spillexpo met meer dan 20.000 bezoekers per jaar. In 2025 heb ik de backend overgenomen terwijl ik de primaire frontend-developer bleef, en heb sindsdien de kernsystemen van het bedrijf herbouwd tot white-label platformen: 13 branded Electron-apps vanuit één monorepo, 8 retailmerken bediend door één web-codebase, en een backend die meer doet met ongeveer 38% minder code. Ik lever softwareoplossingen voor bedrijven zoals",
+                companies: ["Elgiganten", "Logitech", "Lego", "TCL", "Keychron", "Hisense", "Samsung"],
                 andMore: "en nog veel meer.",
             },
         },
@@ -78,13 +80,13 @@ export const lang_nl = {
                 period: "Jan 2025 - Heden",
                 location: "Tallinn, Estland (Hybride)",
                 highlights: [
-                    "Enige BE- en gedeeltelijke FE-ontwikkelaar achter het nieuwe verkooptrainingsplatform van het bedrijf, gebouwd van een whiteboard-schets tot een volledig product",
-                    "Omgezet van 10+ branches naar één monorepo met workspaces voor de Electron-apps van het bedrijf",
-                    "Volledige backend-verantwoordelijkheid overgenomen: bouwen, onderhouden en refactoren van TypeScript-, Node.js- en Firebase-services",
-                    "Electron-applicaties ontwerpen, ontwikkelen en deployen voor live gamedata-tracking en interne evenementtools",
-                    "Firebase-beveiligingsregels, Zod-validatie en consistente CRUD-patronen opgezet voor meerdere klantprojecten",
-                    "Open game-API’s, telemetryfeeds en lokale servers geïntegreerd voor geautomatiseerde dataverwerking tijdens live evenementen",
-                    "Custom CS2-maps en live 1v1-leaderboards ontwikkeld voor DreamHack en Spillexpo, met 20.000+ bezoekers per jaar",
+                    "Samen met de CEO een B2B-verkooptrainingsplatform ontwikkeld, van whiteboard-schets tot productie: multi-tenant architectuur, 7 gebruikersrollen, training- en quizbuilder, rolgebaseerde analytics en een AI-supportchatbot (Anthropic/OpenAI API's)",
+                    "Enige frontend-developer van de Electron tracker-apps en grote leaderboard-schermen; de trackers geherstructureerd van 10+ branches naar één monorepo, 13 branded apps die ongeveer 90% van hun code delen",
+                    "Live telemetrie-integraties gebouwd voor 8 games (F1, Forza, Gran Turismo 7, CS2, Fall Guys), met realtime uitlezen van UDP-pakketten en game-API's",
+                    "Volledige backend-verantwoordelijkheid overgenomen en herbouwd in TypeScript en Firebase: 38% minder code dan het legacy-systeem, met Zod-validatie op elk endpoint, multi-tenant data-isolatie, rate limiting, gecentraliseerde error logging en GDPR-flows",
+                    "Een offline-first score-pipeline gebouwd voor onbetrouwbare evenementnetwerken: IndexedDB-wachtrij, achtergrondsynchronisatie en begrensde retries",
+                    "CI/CD opgezet met GitHub Actions: lint gates zonder warnings, TypeScript build-checks en versiebeheerde deployments met rollback",
+                    "Custom CS2-maps en live 1v1-leaderboards ontwikkeld voor DreamHack en Spillexpo, draaiend voor 20.000+ bezoekers per jaar",
                 ],
             },
             {
@@ -97,7 +99,8 @@ export const lang_nl = {
                     "Designmockups omgezet naar responsieve productie-webapps",
                     "Gewerkt met Firebase-authenticatie, Cloud Functions en externe API’s voor klantprojecten",
                     "Evenement-leaderboards gebouwd, waaronder racing-telemetry-setups en CS2 1v1-scoreboards",
-                    "Meer dan 10 custom CS2-maps gemaakt in Hammer Editor die samenwerkten met onze in-house eventsoftware",
+                    "Meer dan 10 custom CS2 1v1- en time trial-maps gemaakt in Hammer Editor (Source 2) die samenwerkten met onze in-house eventsoftware",
+                    "Een interne Electron-adminapp gebouwd die door het devteam en eventpersoneel wordt gebruikt tijdens live evenementen",
                     "Legacy code opgeschoond, hosting geoptimaliseerd en GitHub-setup overzichtelijk gehouden",
                     "On-site technische ondersteuning verleend bij DreamHack en Spillexpo",
                 ],
@@ -132,7 +135,7 @@ export const lang_nl = {
                 location: "Gent, België",
                 description:
                     "Full-stack webdevelopment-cursussen met zowel frontend- als backendtechnologieën",
-                note: "* Goede resultaten gedurende de gehele opleiding. Verhuisd naar Estland voor het behalen van het certificaat.",
+                note: "* Goede resultaten gedurende de hele opleiding. Verhuisd naar Estland vóór de finale certificering.",
                 skills: [
                     "HTML5, CSS en SCSS, JavaScript, TypeScript",
                     "React, Node.js, GraphQL, REST API’s, Firebase",
@@ -199,22 +202,22 @@ export const lang_nl = {
 
     SEO: {
         landing: {
-            title: "",
-            desc: "",
+            title: "Freelance Full Stack Developer",
+            desc: "Nick Roofthooft, freelance Full Stack Developer die React-, TypeScript-, Node.js- en Firebase-apps bouwt, plus realtime tech voor live gaming-evenementen zoals DreamHack en Spillexpo.",
         },
         work: {
-            title: "",
-            desc: "",
+            title: "Werk & Projecten",
+            desc: "Geselecteerde freelance- en zijprojecten van Nick Roofthooft, gebouwd met Next.js, React, TypeScript, Radix UI, Firebase en Electron.",
         },
 
         about: {
-            title: "",
-            desc: "",
+            title: "Over mij",
+            desc: "Full Stack Developer gevestigd in Estland met 3,5+ jaar ervaring in het bouwen van web- en Electron-apps en realtime systemen voor grote gaming-evenementen.",
         },
 
         contact: {
-            title: "",
-            desc: "",
+            title: "Contact",
+            desc: "Neem contact op met Nick Roofthooft, freelance Full Stack Developer. LinkedIn, GitHub en e-mail.",
         },
     },
 };

@@ -14,13 +14,6 @@ export const WorkList = ({ lang }: { lang: PageLang }) => {
                     <WorkListItem lang={lang} item={item} />
                 </InViewWrapper>
             ))}
-            {/* <Flex direction={"column"} gap={"2"}> */}
-            {/* <Text color="gray" /size={"3"}>To see my everything I made during university, please visit my legacy website.</Text> */}
-            {/* <Box>
-                    <Button className="cursor" color="gray" size={"1"} onClick={() => window.open("https://main.dcqjxor194gtz.amplifyapp.com/Work/", "_blank")}>See all older cases</Button>
-
-                </Box> */}
-            {/* </Flex> */}
         </Flex>
     );
 };

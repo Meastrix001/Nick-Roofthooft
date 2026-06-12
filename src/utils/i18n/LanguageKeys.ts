@@ -6,6 +6,6 @@ export const LanguageKeys = {
     nl: lang_nl,
 }
 export const LanguageOptions = {
-    Nederlands: "nl/",
-    English: "en/"
+    English: "en",
+    Nederlands: "nl",
 }

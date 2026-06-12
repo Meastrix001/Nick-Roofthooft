@@ -13,31 +13,15 @@ export default function LanguageSwitcher() {
   const setLanguage = useLanguageStore((s) => s.setLanguage);
   const [hydrated, setHydrated] = useState(false);
 
-  const handleLanguageChange = async (lang: PageLang) => {
+  const handleLanguageChange = (lang: PageLang) => {
     if (typeof window === "undefined") return;
 
-    const currentPathname = window.location.pathname;
     setLanguage(lang);
 
-    // Handle root paths
-    if (currentPathname === "/" || currentPathname === "/en" || currentPathname === "/nl") {
-      if (lang === "en") {
-        router.push("/");
-      } else {
-        router.push(`/${lang}`);
-      }
-      return;
-    }
-
-    // Remove language prefix - make trailing slash optional
-    const cleanPath = currentPathname.replace(/^\/(nl|en)\/?/, "");
-
-    // Build new path
-    if (lang === "en") {
-      router.push(`/${cleanPath}`);
-    } else {
-      router.push(`/${lang}/${cleanPath}`);
-    }
+    // Strip any existing language prefix, then re-prefix.
+    // Both languages live under a prefix (/en, /nl) — there is no unprefixed root.
+    const cleanPath = window.location.pathname.replace(/^\/(nl|en)\/?/, "");
+    router.push(cleanPath ? `/${lang}/${cleanPath}` : `/${lang}`);
   };
 
   useEffect(() => {

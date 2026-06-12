@@ -1,7 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://www.beautybystiina.ee",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://nick-roofthooft.vercel.app",
   generateRobotsTxt: true,
   sitemapSize: 5000,
-  // Temporarily remove additionalPaths to isolate the issue
+  changefreq: "monthly",
+  priority: 0.8,
 };

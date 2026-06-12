@@ -1,5 +1,5 @@
-"use client";
 import { Box, Container, Flex, Grid } from "@radix-ui/themes";
+import Image from "next/image";
 import { LandingHero } from "./LandingHero/LandingHero";
 import { LandingTech } from "./LandingTech/LandingTech";
 import { PageLang } from "@/models/pageLang.model";
@@ -13,12 +13,17 @@ export default function HomePage({ lang }: { lang: PageLang }) {
             <LandingHero lang={lang} />
 
             <Box display={{ initial: "none", lg: "block" }} className="landing__image-me" maxWidth="45vw" maxHeight="60vh">
-              <img
+              <Image
                 src="/static/image.webp"
-                alt="Me"
+                alt="Portrait of Nick Roofthooft"
+                width={800}
+                height={1000}
+                priority
+                sizes="45vw"
                 style={{
                   width: "100%",
-                  height: "100%",
+                  height: "auto",
+                  maxHeight: "60vh",
                   objectFit: "contain",
                   display: "block",
                 }}

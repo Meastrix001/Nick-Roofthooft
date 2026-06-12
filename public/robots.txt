@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.beautybystiina.ee
+Host: https://nick-roofthooft.vercel.app
 
 # Sitemaps
-Sitemap: https://www.beautybystiina.ee/sitemap.xml
+Sitemap: https://nick-roofthooft.vercel.app/sitemap.xml

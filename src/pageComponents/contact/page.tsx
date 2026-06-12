@@ -7,15 +7,14 @@ import {
   Grid,
   Heading,
 } from "@radix-ui/themes";
+import Image from "next/image";
+import Link from "next/link";
 import { ContactInfoList } from "./ContactInfoList/ContactInfoList";
-import { useRouter } from "next/navigation";
 import { InViewWrapper } from "@/hooks/InViewWrapper";
 import { PageLang } from "@/models/pageLang.model";
 import { LanguageKeys } from "@/utils/i18n/LanguageKeys";
 
 export default function ContactPage({ lang }: { lang: PageLang }) {
-  const Router = useRouter();
-
   return (
     <Container mt={"0"} width={{ lg: "100vw" }} height={{ lg: "100vh" }} className="contact">
       <Flex
@@ -24,15 +23,11 @@ export default function ContactPage({ lang }: { lang: PageLang }) {
         justify={"center"}
         position={"absolute"}
         width={"100%"}
-        className="cursor"
       >
-        <Heading
-          onClick={() => Router.push(`/${lang}`)}
-          align={"center"}
-          as="h1"
-          size={{ initial: "8", lg: "9" }}
-        >
-          {LanguageKeys[lang].constants.name}
+        <Heading align={"center"} as="h1" size={{ initial: "8", lg: "9" }}>
+          <Link href={`/${lang}`} className="cursor" style={{ color: "inherit", textDecoration: "none" }}>
+            {LanguageKeys[lang].constants.name}
+          </Link>
         </Heading>
       </Flex>
 
@@ -52,11 +47,12 @@ export default function ContactPage({ lang }: { lang: PageLang }) {
         <Box className="contact__dice">
           <InViewWrapper direction="right">
             <AspectRatio ratio={16 / 9}>
-              <img
+              <Image
                 src={"/static/contact_me.jpg"}
-                width={"100%"}
-                height={"100%"}
-                style={{ filter: "grayscale(100%)" }}
+                alt="Nick Roofthooft"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                style={{ objectFit: "cover", filter: "grayscale(100%)" }}
               />
             </AspectRatio>
           </InViewWrapper>

@@ -37,6 +37,12 @@ export const LandingHero = ({ lang }: { lang: PageLang }) => {
                             </Text>
                         </Em>
                     </InViewWrapper>
+
+                    <InViewWrapper direction="bottom" delay={0.6}>
+                        <Text as="p" mt={"3"} size={{ initial: "3", lg: "4" }} color="gray" style={{ maxWidth: "32rem" }}>
+                            {LanguageKeys[lang].landing.tagline}
+                        </Text>
+                    </InViewWrapper>
                 </Box>
 
                 <Section>
