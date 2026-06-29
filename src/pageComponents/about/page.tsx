@@ -9,6 +9,7 @@ import { AboutExperience } from "./AboutExperience/AboutExperience";
 import { AboutEducation } from "./AboutEducation/AboutEducation";
 import { AboutTechstack } from "./AboutTechstack/AboutTechstack";
 import { AboutSpecialized } from "./AboutSpecialized/AboutSpecialized";
+import { AboutRecommendation } from "./AboutRecommendation/AboutRecommendation";
 
 export default function AboutPage({ lang }: { lang: PageLang }) {
 
@@ -19,6 +20,8 @@ export default function AboutPage({ lang }: { lang: PageLang }) {
             <AboutBio lang={lang} />
 
             <AboutExperience lang={lang} />
+
+            <AboutRecommendation lang={lang} />
 
             <AboutEducation lang={lang} />
 

@@ -73,6 +73,12 @@ export const lang_nl = {
             techStack: "Tech Stack & Vaardigheden",
             specializations: "Specialisaties",
         },
+        recommendation: {
+            heading: "Aanbevelingsbrief",
+            subtitle: "Een ondertekende referentie van Brandweb OÜ.",
+            openInNewTab: "Volledig scherm openen",
+            fallback: "Je browser kan de PDF hier niet tonen. Open de aanbevelingsbrief.",
+        },
         experiences: [
             {
                 role: "Full Stack Developer",

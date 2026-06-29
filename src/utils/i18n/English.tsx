@@ -72,6 +72,12 @@ export const lang_en = {
       techStack: "Tech Stack & Skills",
       specializations: "Specializations"
     },
+    recommendation: {
+      heading: "Letter of Recommendation",
+      subtitle: "A signed reference from Brandweb OÜ.",
+      openInNewTab: "Open full screen",
+      fallback: "Your browser can't display the PDF here. Open the Letter of Recommendation."
+    },
     experiences: [
       {
         role: "Full Stack Developer",
